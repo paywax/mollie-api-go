@@ -14,6 +14,7 @@ type PaymentMethod string
 
 // Supported payment methods
 const (
+	ApplePay       PaymentMethod = "applepay"
 	Bancontact     PaymentMethod = "bancontact"
 	BankTransfer   PaymentMethod = "banktransfer"
 	Belfius        PaymentMethod = "belfius"
@@ -81,6 +82,7 @@ type Payment struct {
 	Details                         *PaymentDetails `json:"details,omitempty"`
 	RestrictPaymentMethodsToCountry *Locale         `json:"restrictPaymentMethodsToCountry,omitempty"`
 	SubscriptionID                  string          `json:"subscriptionId,omitempty"`
+	ApplePayPaymentToken            string          `json:"applePayPaymentToken,omitempty"`
 }
 
 // PaymentLinks describes all the possible links to be returned with
