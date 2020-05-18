@@ -1,4 +1,4 @@
-module github.com/VictorAvelar/mollie-api-go
+module github.com/paywax/mollie-api-go
 
 go 1.12
 
